@@ -1,0 +1,283 @@
+@import "vars";
+
+.top-cart {
+    height: 400px;
+    background-image: url(images/bgcart.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    color: rgb(255, 255, 255);
+    font-size: ($font-size+2)*4;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: left;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__text-name {
+        color: $cart-text;
+        font-size: ($font-size+2);
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    
+    &__info {
+        
+        display: flex;
+        gap: 14px;
+        flex-direction: column;
+        width: 276px;
+        
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__conteiner {
+        max-width: 582px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        height: 556px;
+        grid-column: span 4;
+        padding-top: 42px;
+
+   }
+
+    &__heading {
+        color: $cart-text;
+        font-size: ($font-size+2)*$scaleFactor;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    &__content {
+        grid-column: span 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__product {
+        width: 173px;
+    }
+
+    &__name {
+        color: $cart-text;
+        font-size: ($font-size+2)*$scaleFactor;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    &__text {
+        color: rgb(136, 136, 136);
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    &__price {
+        color: rgb(5, 5, 5);
+        font-size: $font-size+2;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: $cart-text;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 210%;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    &__quantity {
+        border: none;
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        text-align: left;
+        position: relative;
+    }
+
+    &__input-quant {
+        border: none;
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        text-align: center;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    &__btn {
+        height: 37px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        padding-left: 34px;
+        padding-right: 34px;
+        color: rgb(2, 2, 2);
+        font-family: inherit;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        background-color: white;
+        
+    }
+
+}
+
+.cart__input-quant::-webkit-inner-spin-button,
+.cart-menu__input-quant::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.cart__input-quant:valid {
+    max-width: 47px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.cart__input-quant:focus-visible {
+    outline: none;
+}
+
+.cart__arrow {
+    position: absolute;
+    border: 0;
+    background-color: #F7F6F6;
+
+    &_plus {
+        top: 9px;
+        right: 15%;
+    }
+
+    &_minus {
+        bottom: 9px;
+        right: 15%;
+    }
+}
+.form-box {
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        margin-top: 32px;
+        margin-bottom: 64px;
+        width: 288px;
+    }
+
+    &__input {
+        color: $cart-text;
+        font-family: inherit;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: start;
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: rgb(247, 246, 246);
+
+    }
+
+    &__input::placeholder {
+        color: $cart-text;
+    }
+    &__price {
+        color: $cart-text;
+        font-size: ($font-size+2)*$scaleFactor;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    &__btn {
+        
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: $cart-text;
+        font-family: inherit;
+        font-size: $font-size+2;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        padding-left: 76px;
+        padding-right: 76px;
+        margin-top: 18px;
+        transition: background-color 1s;
+
+        &:hover {  
+            animation: button-hover 1s;  
+            transform: scale(1.2);
+        }  
+    }
+      
+    @keyframes button-hover {  
+        from { background-color: #c2c0c0; }  
+        to { background-color:greenyellow; }  
+    }  
+}

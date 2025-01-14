@@ -1,0 +1,271 @@
+@media (max-width: 765px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+
+        &__input {
+            display: none;
+        }
+
+        &__logo {
+            width: 99px;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        &-mob {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+
+    .top {
+
+        &__title {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .for-box {
+
+        &__heading {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+            background-position: center;
+
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+
+    .product-box {
+        padding-top: 32px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__content {
+            gap: 32px;
+            margin-bottom: 36px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .product {
+
+        &__img {
+            height: 226px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .link-box {
+        margin-top: 36px;
+        margin-bottom: 32px;
+
+        &__link_catalog {
+            display: none;
+        }
+
+        &__link_more {
+            display: block;
+        }
+    }
+
+    .footer {
+        padding-bottom: 32px;
+
+        &__content {
+            justify-content: center;
+            gap: 70px;
+        }
+
+        &__info {
+            gap: 100px;
+        }
+    }
+
+    .catalog {
+        margin-bottom: 32px;
+
+        &__title {
+            font-size: 48px;
+            line-height: 59px;
+            justify-content: center;
+            padding-top: 18px;
+        }
+
+        &-nav__link {
+            font-size: 14px;
+        }
+
+        &-box {
+            gap: 32px;
+            justify-content: center;
+        }
+
+        &-link {
+            margin-bottom: 32px;
+        }
+
+        &-menu {
+            gap: 14px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        &-filter {
+            flex-direction: column-reverse;
+
+            &__btn {
+                max-width: 164px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .filter-button-wrapper {
+        justify-content: flex-start;
+
+    }
+
+    #filter-select {
+        max-width: 203px;
+        font-size: 14px;
+        line-height: 17px;
+        background-position: right 20px center;
+    }
+
+    .filter-form {
+        max-width: 286px;
+        left: 0;
+
+        &__content-wrapper {
+            max-height: 910px;
+            min-width: 190px;
+        }
+    }
+
+    .cart {
+        margin-top: 92px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 48px;
+        margin-bottom: 16px;
+
+        &__content {
+            grid-column: 1 / -1;
+        }
+        
+        &__name-box {
+            display: none;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        
+        &__price {
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        &__form-menu {
+            display: flex;
+            gap: 14px;
+        }
+
+        &__btn {
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 8px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            &_resume {
+                min-width: 163px;
+                padding: 0;
+           }
+        }
+
+        &__product {
+            display: none;
+        }
+        
+        &__item {
+            padding-top: 18px;
+            padding-bottom: 0;
+            margin-bottom: 24px;
+            gap: 0;
+        }
+
+        &__info {
+            gap: 8px;
+        }
+    }
+
+    .heading-big {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        margin-top: 82px;
+    }
+}
